@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MLPublicKey</key>
+	<string>444a9ef5-8a6b-429f-abdf-587639155d88</string>
+	<key>MLPaymentMethods</key>
+	<string>https://api.mercadopago.com/v1/payment_methods?public_key=</string>
+	<key>MLCardIssuer</key>
+	<string>https://api.mercadopago.com/v1/payment_methods/card_issuers?public_key=PUBLIC_KEY&amp;payment_method_id=MEDIO_DE_PAGO_SELECCIONADO</string>
+	<key>MLInstallments</key>
+	<string>https://api.mercadopago.com/v1/payment_methods/installments?public_key=PUBLIC_KEY &amp;amount=MONTO_DEL_PASO_1&amp;payment_method_id=MEDIO_DE_PAGO_SELECCIONADO &amp;issuer.id=ISSUER_SELECCIONADO</string>
+</dict>
+</plist>

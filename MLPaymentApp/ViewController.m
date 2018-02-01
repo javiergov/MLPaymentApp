@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MLApi.h"
 
 @interface ViewController ()
+
+@property (nonatomic, retain) MLApi *apiCaller;
 
 @end
 
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if (!_apiCaller) {
+        self.apiCaller = [[MLApi alloc] init];
+    }
+    
 }
 
 
@@ -24,6 +31,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     NSLog(@"memory warning ❗️");
+}
+
+#pragma mark - Button Actions
+- (IBAction)paymenMethodsButtonAction:(id)sender {
+    [self.apiCaller callPaymentMethods];
 }
 
 
