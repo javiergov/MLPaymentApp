@@ -10,7 +10,9 @@
 
 @interface MLApi : NSObject
 
+@property (nonatomic,readonly, copy) NSObject *apiResponseObject;
 
--(void)callPaymentMethods;
+- (void)callPaymentMethods;
+- (NSInteger)amountOfPaymentOptions;
 
 @end

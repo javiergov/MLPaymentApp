@@ -11,6 +11,9 @@
 		DF627C0A201FE833001ED0CA /* MLConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF627C09201FE833001ED0CA /* MLConfiguration.plist */; };
 		DF627C0D20210EC3001ED0CA /* MLApi.m in Sources */ = {isa = PBXBuildFile; fileRef = DF627C0C20210EC3001ED0CA /* MLApi.m */; };
 		DF627C1020211109001ED0CA /* MLConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DF627C0F20211109001ED0CA /* MLConfig.m */; };
+		DF9262202022A16500E4713B /* MLPaymentOptionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF92621F2022A16500E4713B /* MLPaymentOptionsVC.m */; };
+		DF9262242022B86400E4713B /* MPPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9262232022B86400E4713B /* MPPaymentMethod.m */; };
+		DFAF786C20255C2300A387DC /* PaymentMethodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAF786B20255C2300A387DC /* PaymentMethodCell.m */; };
 		DFD00AD1201FAC260006CCC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD00AD0201FAC260006CCC5 /* AppDelegate.m */; };
 		DFD00AD4201FAC260006CCC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD00AD3201FAC260006CCC5 /* ViewController.m */; };
 		DFD00AD7201FAC260006CCC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD00AD5201FAC260006CCC5 /* Main.storyboard */; };
@@ -28,6 +31,12 @@
 		DF627C0C20210EC3001ED0CA /* MLApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLApi.m; sourceTree = "<group>"; };
 		DF627C0E20211109001ED0CA /* MLConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLConfig.h; sourceTree = "<group>"; };
 		DF627C0F20211109001ED0CA /* MLConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLConfig.m; sourceTree = "<group>"; };
+		DF92621E2022A16500E4713B /* MLPaymentOptionsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLPaymentOptionsVC.h; sourceTree = "<group>"; };
+		DF92621F2022A16500E4713B /* MLPaymentOptionsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPaymentOptionsVC.m; sourceTree = "<group>"; };
+		DF9262222022B86400E4713B /* MPPaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPaymentMethod.h; sourceTree = "<group>"; };
+		DF9262232022B86400E4713B /* MPPaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPaymentMethod.m; sourceTree = "<group>"; };
+		DFAF786A20255C2300A387DC /* PaymentMethodCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodCell.h; sourceTree = "<group>"; };
+		DFAF786B20255C2300A387DC /* PaymentMethodCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodCell.m; sourceTree = "<group>"; };
 		DFD00ACC201FAC260006CCC5 /* MLPaymentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPaymentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD00ACF201FAC260006CCC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFD00AD0201FAC260006CCC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +101,28 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		DF9262212022B82400E4713B /* Mercado Pago */ = {
+			isa = PBXGroup;
+			children = (
+				DF627C0B20210EC3001ED0CA /* MLApi.h */,
+				DF627C0C20210EC3001ED0CA /* MLApi.m */,
+				DF9262222022B86400E4713B /* MPPaymentMethod.h */,
+				DF9262232022B86400E4713B /* MPPaymentMethod.m */,
+			);
+			path = "Mercado Pago";
+			sourceTree = "<group>";
+		};
+		DFAF786620255BD900A387DC /* Payment Methods */ = {
+			isa = PBXGroup;
+			children = (
+				DF92621E2022A16500E4713B /* MLPaymentOptionsVC.h */,
+				DF92621F2022A16500E4713B /* MLPaymentOptionsVC.m */,
+				DFAF786A20255C2300A387DC /* PaymentMethodCell.h */,
+				DFAF786B20255C2300A387DC /* PaymentMethodCell.m */,
+			);
+			path = "Payment Methods";
+			sourceTree = "<group>";
+		};
 		DFD00AC3201FAC260006CCC5 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +145,12 @@
 			isa = PBXGroup;
 			children = (
 				DF627C1120211115001ED0CA /* Configuration */,
-				DF627C0B20210EC3001ED0CA /* MLApi.h */,
-				DF627C0C20210EC3001ED0CA /* MLApi.m */,
+				DF9262212022B82400E4713B /* Mercado Pago */,
 				DFD00AD2201FAC260006CCC5 /* ViewController.h */,
 				DFD00AD3201FAC260006CCC5 /* ViewController.m */,
 				DFD00AD5201FAC260006CCC5 /* Main.storyboard */,
 				DF627C08201FE74C001ED0CA /* Supporting Files */,
+				DFAF786620255BD900A387DC /* Payment Methods */,
 			);
 			path = MLPaymentApp;
 			sourceTree = "<group>";
@@ -252,9 +283,12 @@
 			files = (
 				DFD00AD4201FAC260006CCC5 /* ViewController.m in Sources */,
 				DF627C1020211109001ED0CA /* MLConfig.m in Sources */,
+				DF9262242022B86400E4713B /* MPPaymentMethod.m in Sources */,
 				DF627C0D20210EC3001ED0CA /* MLApi.m in Sources */,
 				DFD00ADF201FAC260006CCC5 /* main.m in Sources */,
+				DFAF786C20255C2300A387DC /* PaymentMethodCell.m in Sources */,
 				DFD00AD1201FAC260006CCC5 /* AppDelegate.m in Sources */,
+				DF9262202022A16500E4713B /* MLPaymentOptionsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercadopago.api.MLPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,7 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mercadopago.api.MLPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
